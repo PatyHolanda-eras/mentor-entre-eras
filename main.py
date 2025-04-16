@@ -15,7 +15,7 @@ def webhook():
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
-            {"role": "system", "content": "Você é um mentor virtual educacional. Responda com linguagem casual, recomende vídeos do YouTube e indique se são gratuitos ou pagos."},
+           {"role": "system", "content": "Você é um mentor virtual educacional. Responda com linguagem casual, recomende vídeos do YouTube e indique se são gratuitos ou pagos."},
             {"role": "user", "content": incoming_msg}
         ]
     )
