@@ -1,0 +1,11 @@
+[build]
+command = "pip3 install -r requirements.txt"
+
+[start]
+command = "bash start.sh"
+
+[watch]
+ignore = ["*.pyc", "__pycache__/", ".env"]
+
+[env]
+PYTHONUNBUFFERED = "true"
